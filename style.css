@@ -1,0 +1,281 @@
+/* General */
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #58585a9e; /* abu-abu lembut */
+	color: #0e0e0e;
+	line-height: 1.7;
+	scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+	background-color: #444547 !important; /* abu tua */
+}
+.navbar .nav-link {
+	color: #e9ecef !important;
+	margin-left: 15px;
+	transition: color 0.3s;
+}
+.navbar .nav-link:hover {
+	color: #adb5bd !important;
+}
+
+/* Hero */
+.hero {
+	background: linear-gradient(rgba(33, 37, 41, 0.7), rgba(33, 37, 41, 0.7)), url("https://e1.pxfuel.com/desktop-wallpaper/439/1016/desktop-wallpaper-batik-and-backgrounds-htr-batik.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	text-align: center;
+}
+.hero h1 {
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+.hero .brand {
+	color: #dee2e6;
+}
+.hero .btn {
+	background-color: #6c757d;
+	border: none;
+	font-weight: 600;
+}
+.hero .btn:hover {
+	background-color: #495057;
+	color: #fff;
+}
+
+/* About */
+#about h2 {
+	font-weight: bold;
+	color: #212529;
+	margin-bottom: 1rem;
+	border-left: 5px solid #626669;
+	padding-left: 10px;
+}
+.about-img {
+	border-radius: 12px;
+	box-shadow: 0 6px 12px rgba(33, 37, 41, 0.25);
+	transition: transform 0.3s ease;
+}
+.about-img:hover {
+	transform: scale(1.03);
+}
+/* Background tiap section pakai gradasi abu-abu */
+
+/* About */
+#about {
+	background: linear-gradient(135deg, #e9ecef9b, #dee2e63a);
+}
+
+/* Motif */
+#motif {
+	background-image: url() linear-gradient(135deg, #fdfeff, #dee2e6);
+}
+.card {
+	width: 100%;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+	height: 200px;
+	object-fit: cover;
+}
+
+.owl-nav button {
+	position: absolute;
+	top: 20%;
+	background: #000;
+	color: #fff;
+	border: none;
+	padding: 10px 15px;
+	z-index: 1000;
+	border-radius: 50%;
+}
+
+.owl-nav .owl-prev {
+	left: -25px;
+}
+
+.owl-nav .owl-next {
+	right: -25px;
+}
+/* Filosofi */
+#filosofi {
+	background: linear-gradient(135deg, #ced4da, #494f56);
+}
+
+/* Model */
+#model {
+	background: linear-gradient(135deg, #f1f3f5, #e9ecef);
+}
+
+/* Contact */
+#contact-section {
+	background-color: #f5f5f5;
+	padding: 50px 0;
+}
+
+.contact-container {
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+	padding: 0 20px;
+}
+
+.contact-left,
+.contact-middle,
+.contact-right {
+	flex: 1;
+}
+
+.contact-title {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.logo {
+	font-weight: 600;
+	margin-bottom: 8px;
+}
+
+.desc {
+	font-size: 13px;
+	margin-bottom: 20px;
+	color: #555;
+}
+
+.nav-links {
+	list-style: none;
+	padding: 0;
+}
+
+.nav-links li {
+	font-size: 14px;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+.contact-middle h4,
+.contact-right h4 {
+	font-size: 15px;
+	font-weight: 600;
+	margin-bottom: 8px;
+}
+
+.contact-middle p {
+	font-size: 13px;
+	margin: 4px 0;
+}
+
+.contact-right {
+	text-align: center;
+}
+
+.map-icon {
+	width: 120px;
+	height: auto;
+	filter: grayscale(100%) brightness(40%); /* abu tua */
+}
+
+/* Carousel image styling */
+.carousel-item img {
+	max-height: 500px;
+	object-fit: cover;
+	border: 4px solid #dee2e6;
+	background-color: #f8f9fa;
+}
+
+/* Sections */
+section {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+section h2 {
+	margin-bottom: 20px;
+	font-weight: bold;
+	color: #212529;
+}
+
+/* Footer */
+footer {
+	background-color: #212529;
+	color: #adb5bd;
+	text-align: center;
+	padding: 15px 0;
+	font-size: 0.9rem;
+}
+/* ================= Timeline Filosofi ================= */
+
+.timeline {
+	position: relative;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+.timeline::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+	width: 4px;
+	height: 100%;
+	background-color: #444547; /* garis tengah abu tua */
+	border-radius: 2px;
+}
+
+.timeline-item {
+	position: relative;
+	width: 50%;
+	padding: 20px 40px;
+	box-sizing: border-box;
+}
+
+.timeline-item.left {
+	left: 0;
+	text-align: right;
+}
+
+.timeline-item.right {
+	left: 50%;
+}
+
+.timeline-item::before {
+	content: "●";
+	position: absolute;
+	top: 20px;
+	width: 20px;
+	height: 20px;
+	background: #444547;
+	color: white;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 12px;
+}
+
+.timeline-item.left::before {
+	right: -10px;
+}
+
+.timeline-item.right::before {
+	left: -10px;
+}
+
+.timeline-item h3 {
+	font-weight: bold;
+	margin-bottom: 5px;
+	color: #212529;
+}
+
+.timeline-item p {
+	margin: 0;
+	color: #555;
+}
